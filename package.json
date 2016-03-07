@@ -1,0 +1,29 @@
+{
+  "author": {
+    "email": "joeleonard@gmail.com",
+    "name": "Joe Leonard"
+  },
+  "bugs": {
+    "url": "https://github.com/gijoehosaphat/react-native-keep-screen-on/issues"
+  },
+  "dependencies": {},
+  "description": "React Native module to selective toggle KEEP_SCREEN_ON flag.",
+  "devDependencies": {},
+  "homepage": "https://github.com/euwyn/react-native-keep-screen-on#readme",
+  "license": "MIT",
+  "main": "index.js",
+  "maintainers": [
+    {
+      "name": "gijoehosaphat",
+      "email": "joeleonard@gmail.com"
+    }
+  ],
+  "name": "react-native-keep-screen-on",
+  "optionalDependencies": {},
+  "readme": "ERROR: No README data found!",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/gijoehosaphat/react-native-keep-screen-on.git"
+  },
+  "version": "1.0.0"
+}
