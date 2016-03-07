@@ -20,7 +20,7 @@
   ],
   "name": "react-native-keep-screen-on",
   "optionalDependencies": {},
-  "readme": "ERROR: No README data found!",
+  "readme": "README.md",
   "repository": {
     "type": "git",
     "url": "git+ssh://git@github.com/gijoehosaphat/react-native-keep-screen-on.git"
