@@ -9,7 +9,7 @@
   "dependencies": {},
   "description": "React Native module to selective toggle KEEP_SCREEN_ON flag.",
   "devDependencies": {},
-  "homepage": "https://github.com/euwyn/react-native-keep-screen-on#readme",
+  "homepage": "https://github.com/gijoehosaphat/react-native-keep-screen-on#readme",
   "license": "MIT",
   "main": "index.js",
   "maintainers": [
@@ -20,10 +20,17 @@
   ],
   "name": "react-native-keep-screen-on",
   "optionalDependencies": {},
-  "readme": "README.md",
   "repository": {
     "type": "git",
     "url": "git+ssh://git@github.com/gijoehosaphat/react-native-keep-screen-on.git"
   },
-  "version": "1.0.1"
+  "version": "1.0.1",
+  "keywords": [
+    "react-component",
+    "react-native",
+    "android"
+  ],
+  "peerDependencies": {
+    "react-native": "^0.20.0"
+  }
 }
