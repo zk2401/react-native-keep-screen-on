@@ -13,9 +13,9 @@ public class KeepScreenOnModule extends ReactContextBaseJavaModule {
   private Activity mActivity = null;
   private ReactApplicationContext mContext = null;
 
-  public KeepScreenOnModule(ReactApplicationContext reactContext, Activity mActivity) {
+  public KeepScreenOnModule(ReactApplicationContext reactContext) {
     super(reactContext);
-    this.mActivity = mActivity;
+    this.mActivity = getCurrentActivity();
     this.mContext = reactContext;
   }
 

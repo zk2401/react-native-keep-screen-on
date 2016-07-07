@@ -12,16 +12,14 @@ import java.util.*;
 
 public class KeepScreenOnPackage implements ReactPackage {
 
-    private Activity mActivity = null;
+    public KeepScreenOnPackage() {
 
-    public KeepScreenOnPackage(Activity activity) {
-        mActivity = activity;
     }
 
     @Override
     public List<NativeModule> createNativeModules(ReactApplicationContext reactContext) {
         List<NativeModule> modules = new ArrayList<>();
-        modules.add(new KeepScreenOnModule(reactContext, mActivity));
+        modules.add(new KeepScreenOnModule(reactContext));
         return modules;
     }
 
