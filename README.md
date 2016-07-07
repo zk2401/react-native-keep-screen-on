@@ -4,23 +4,28 @@ Allows for the selective toggling of the KEEP_SCREEN_ON flag.
 ***CURRENTLY ANDROID ONLY***
 
 ## Installation ##
-
 `npm install react-native-keep-screen-on --save`
 
-### In `settings.gradle` add the following lines:
+## Configuration
+### With [rnpm](https://github.com/rnpm/rnpm)
+Just run `rnpm link react-native-keep-screen-on`
+
+### Manually
+
+#### In `settings.gradle` add the following lines:
 
 ```groovy
 include ':KeepScreenOn'
 project(':KeepScreenOn').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-keep-screen-on/android')
 ```
 
-### In `build.gradle` add the following line:
+#### In `build.gradle` add the following line:
 
 ```groovy
 compile project(':KeepScreenOn')
 ```
 
-### In `MainActivity.java` add the following lines:
+#### In `MainActivity.java` add the following lines:
 
 ```java
 import com.gijoehosaphat.keepscreenon.KeepScreenOnPackage;
