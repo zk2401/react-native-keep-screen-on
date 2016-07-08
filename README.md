@@ -25,7 +25,16 @@ project(':KeepScreenOn').projectDir = new File(rootProject.projectDir, '../node_
 compile project(':KeepScreenOn')
 ```
 
-#### In `MainActivity.java` add the following lines:
+#### < [0.29] : In `MainActivity.java` add the following lines:
+
+```java
+import com.gijoehosaphat.keepscreenon.KeepScreenOnPackage;
+```
+
+```java
+new KeepScreenOnPackage(this)
+```
+#### >= [0.29] : In `MainApplication.java` add the following lines:
 
 ```java
 import com.gijoehosaphat.keepscreenon.KeepScreenOnPackage;
