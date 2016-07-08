@@ -10,12 +10,10 @@ import com.facebook.react.bridge.ReactMethod;
 
 public class KeepScreenOnModule extends ReactContextBaseJavaModule {
 
-  private Activity mActivity = null;
   private ReactApplicationContext mContext = null;
 
   public KeepScreenOnModule(ReactApplicationContext reactContext) {
     super(reactContext);
-    this.mActivity = getCurrentActivity();
     this.mContext = reactContext;
   }
 
@@ -26,18 +24,19 @@ public class KeepScreenOnModule extends ReactContextBaseJavaModule {
 
   @ReactMethod
   public void setKeepScreenOn(Boolean bKeepScreenOn) {
+    final Activity activity = getCurrentActivity();
     if (bKeepScreenOn == true) {
-      this.mActivity.runOnUiThread(new Runnable() {
+      activity.runOnUiThread(new Runnable() {
         @Override
         public void run() {
-          KeepScreenOnModule.this.mActivity.getWindow().addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
+          activity.getWindow().addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
         }
       });
     } else if (bKeepScreenOn == false) {
-      this.mActivity.runOnUiThread(new Runnable() {
+      activity.runOnUiThread(new Runnable() {
         @Override
         public void run() {
-          KeepScreenOnModule.this.mActivity.getWindow().clearFlags(android.view.WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
+          activity.getWindow().clearFlags(android.view.WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
         }
       });
     }
