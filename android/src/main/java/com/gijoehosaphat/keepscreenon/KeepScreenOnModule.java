@@ -26,19 +26,23 @@ public class KeepScreenOnModule extends ReactContextBaseJavaModule {
   public void setKeepScreenOn(Boolean bKeepScreenOn) {
     final Activity activity = getCurrentActivity();
     if (bKeepScreenOn == true) {
-      activity.runOnUiThread(new Runnable() {
-        @Override
-        public void run() {
-          activity.getWindow().addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
-        }
-      });
+      if (activity != null) {
+        activity.runOnUiThread(new Runnable() {
+          @Override
+          public void run() {
+            activity.getWindow().addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
+          }
+        });
+      }
     } else if (bKeepScreenOn == false) {
-      activity.runOnUiThread(new Runnable() {
-        @Override
-        public void run() {
-          activity.getWindow().clearFlags(android.view.WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
-        }
-      });
+      if (activity != null) {
+        activity.runOnUiThread(new Runnable() {
+          @Override
+          public void run() {
+            activity.getWindow().clearFlags(android.view.WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
+          }
+        });
+      }
     }
   }
 }
