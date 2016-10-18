@@ -1,7 +1,5 @@
 # react-native-keep-screen-on
-Allows for the selective toggling of the KEEP_SCREEN_ON flag.
-
-***CURRENTLY ANDROID ONLY***
+Allows for the selective toggling of the KEEP_SCREEN_ON flag (Android) and the setIdleTimerDisabled flag (iOS).
 
 ## Installation ##
 `npm install react-native-keep-screen-on --save`
@@ -56,5 +54,3 @@ KeepScreenOn.setKeepScreenOn(true)
 KeepScreenOn.setKeepScreenOn(false)
 ```
 
-## TODO:
-1. Add similar support to iOS
