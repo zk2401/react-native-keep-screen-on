@@ -24,14 +24,14 @@
     "type": "git",
     "url": "git+ssh://git@github.com/gijoehosaphat/react-native-keep-screen-on.git"
   },
-  "version": "1.0.7",
+  "version": "1.0.8",
   "keywords": [
     "react-component",
     "react-native",
     "android"
   ],
   "peerDependencies": {
-    "react-native": ">=0.20.0"
+    "react-native": "*"
   },
   "rnpm": {
       "android": {
