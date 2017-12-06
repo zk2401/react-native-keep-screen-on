@@ -2,4 +2,4 @@
 
 var { NativeModules } = require('react-native')
 
-module.exports = NativeModules.KeepScreenOn
+ module.exports = NativeModules.KeepScreenOn

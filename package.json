@@ -1,4 +1,51 @@
 {
+  "_args": [
+    [
+      {
+        "name": "react-native-keep-screen-on",
+        "raw": "react-native-keep-screen-on",
+        "rawSpec": "",
+        "scope": null,
+        "spec": "latest",
+        "type": "tag"
+      },
+      "/Users/zk/reactNativeProject/learn-app"
+    ]
+  ],
+  "_cnpm_publish_time": 1509568198669,
+  "_from": "react-native-keep-screen-on@latest",
+  "_hasShrinkwrap": false,
+  "_id": "react-native-keep-screen-on@1.2.0",
+  "_inCache": true,
+  "_installable": true,
+  "_location": "/react-native-keep-screen-on",
+  "_nodeVersion": "8.8.1",
+  "_npmOperationalInternal": {
+    "host": "s3://npm-registry-packages",
+    "tmp": "tmp/react-native-keep-screen-on-1.2.0.tgz_1509568197683_0.7008937457576394"
+  },
+  "_npmUser": {
+    "email": "joeleonard@gmail.com",
+    "name": "gijoehosaphat"
+  },
+  "_npmVersion": "5.4.2",
+  "_phantomChildren": {},
+  "_requested": {
+    "name": "react-native-keep-screen-on",
+    "raw": "react-native-keep-screen-on",
+    "rawSpec": "",
+    "scope": null,
+    "spec": "latest",
+    "type": "tag"
+  },
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "https://registry.npm.taobao.org/react-native-keep-screen-on/download/react-native-keep-screen-on-1.2.0.tgz",
+  "_shasum": "8e243c2f8ab23e4ebee6ec5b880fd2f386c38df7",
+  "_shrinkwrap": null,
+  "_spec": "react-native-keep-screen-on",
+  "_where": "/Users/zk/reactNativeProject/learn-app",
   "author": {
     "email": "joeleonard@gmail.com",
     "name": "Joe Leonard"
@@ -9,33 +56,43 @@
   "dependencies": {},
   "description": "React Native module to selective toggle KEEP_SCREEN_ON flag.",
   "devDependencies": {},
-  "homepage": "https://github.com/gijoehosaphat/react-native-keep-screen-on#readme",
-  "license": "MIT",
-  "main": "index.js",
-  "maintainers": [
-    {
-      "name": "gijoehosaphat",
-      "email": "joeleonard@gmail.com"
-    }
-  ],
-  "name": "react-native-keep-screen-on",
-  "optionalDependencies": {},
-  "repository": {
-    "type": "git",
-    "url": "git+ssh://git@github.com/gijoehosaphat/react-native-keep-screen-on.git"
+  "directories": {},
+  "dist": {
+    "noattachment": false,
+    "shasum": "8e243c2f8ab23e4ebee6ec5b880fd2f386c38df7",
+    "size": 4330,
+    "tarball": "http://registry.npm.taobao.org/react-native-keep-screen-on/download/react-native-keep-screen-on-1.2.0.tgz"
   },
-  "version": "1.2.0",
+  "gitHead": "062de88d7878d3cf2a06d46acc4e3ecb0d020e23",
+  "homepage": "https://github.com/gijoehosaphat/react-native-keep-screen-on#readme",
   "keywords": [
     "react-component",
     "react-native",
     "android"
   ],
+  "license": "MIT",
+  "main": "index.js",
+  "maintainers": [
+    {
+      "email": "joeleonard@gmail.com",
+      "name": "gijoehosaphat"
+    }
+  ],
+  "name": "react-native-keep-screen-on",
+  "optionalDependencies": {},
   "peerDependencies": {
     "react-native": "*"
   },
+  "publish_time": 1509568198669,
+  "readme": "ERROR: No README data found!",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/gijoehosaphat/react-native-keep-screen-on.git"
+  },
   "rnpm": {
-      "android": {
-          "packageInstance": "new KeepScreenOnPackage(this)"
-      }
-  }
+    "android": {
+      "packageInstance": "new KeepScreenOnPackage(this)"
+    }
+  },
+  "version": "1.2.0"
 }
